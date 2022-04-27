@@ -1,0 +1,321 @@
+:root {
+
+}
+
+*{
+
+}
+
+.logo{
+    height: auto;
+    width: 230px;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    border-radius: 70px;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+.top{
+    height: 120px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(151, 89, 89);
+}
+
+
+
+.info{
+    z-index: -1;
+    position: absolute;
+    box-sizing: border-box;
+    background-color: #f0eae5;
+    width: 100%;
+    height: 3480px;
+    top: 120px;
+    left: 0px;
+}
+
+.info2{
+    position: absolute;
+    box-sizing: border-box;
+    background-color: #f0eae5;
+    width: 100%;
+    height: 1080px;
+    top: 120px;
+    left: 0px;
+}
+
+h1 {
+    position: relative;
+    top: 30px;
+    text-align:center; 
+    font-size:50px; 
+    text-transform:uppercase; 
+    color:#222; 
+    letter-spacing:1px;
+    font-family:"Playfair Display", serif; 
+    font-weight:400;
+}
+
+.menu{
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.menu > div{
+    width: 400px;
+    height: 330px;
+    padding: 20px;
+    text-align: center;
+    border-style: solid;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.info > h1 > span {
+    margin-top: 5px;
+    font-size:15px; 
+    color:#444; 
+    word-spacing:1px; 
+    font-weight:normal; 
+    letter-spacing:2px;
+    text-transform: uppercase; 
+    font-family:"Raleway", sans-serif; 
+    font-weight:500;
+  
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-template-rows: 27px 0;
+    grid-gap: 20px;
+    align-items: center;
+}
+  
+.info > h1 > span:after,.info > h1 span:before {
+    content: " ";
+    display: block;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    height: 5px;
+    background-color:#f8f8f8;
+}
+
+.info > p{
+    position: relative;
+    top: 30px;
+    text-align:right; 
+    font-size: 20px; 
+    text-transform: capitalize; 
+    color:#222; 
+    letter-spacing:1px;
+    font-family:"Playfair Display", serif; 
+    font-weight: 400;
+}
+
+
+.info > h2{
+    position: relative;
+    top: 30px;
+    font-size: 30px; 
+    text-transform: uppercase; 
+    color:#222; 
+    letter-spacing:1px;
+    font-family:"Playfair Display", serif; 
+    font-weight: 400;
+    margin: 30px;
+    text-shadow: 1px 1px 2px #975959;
+    background-size: cover;
+    transition: all 0.5s ease;
+}
+
+.menu-title{
+    text-align: center;
+}
+
+.build-title{
+    text-align: left; 
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    left: 0;
+    background-color: #975959;  
+}
+
+.menu-page{
+    top: 3600px;
+}
+
+.pastelero-page{
+    top: 1200px;
+}
+
+.contact{
+    box-sizing: border-box;
+    text-align: center; 
+    color: black;
+    font-size: 17px; 
+    letter-spacing:1px;
+    font-family:"Playfair Display", serif; 
+}
+
+.contact > h4{
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+.contact span{
+    font-weight: bolder;
+}
+
+.taste-cake{
+    box-sizing: border-box;
+    margin: 70px 70px 70px 100px;
+}
+.decoration-cake{
+    box-sizing: border-box;
+    margin: 70px 70px 70px 100px;
+}
+
+table, tr, td{
+    border-style: solid;
+    border-width: 1px;
+    border-collapse: collapse;
+}
+
+.decoration-table table{
+    border-width: 0px 1px 0px 0px;
+}
+
+.decoration-table tr{
+    border-width: 0px 1px 0px 0px;
+}
+
+.decoration-table td{
+    border-width: 0px 1px 0px 0px;
+}
+
+.photo td img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.table-title td{
+    font-weight: bolder;
+}
+
+.size-cake{
+    margin: 70px 70px 70px 100px;
+}
+
+.client-contact{
+    text-align: center;
+    background-color: rgba(242, 242, 242, 0.781);
+    margin: 0 auto;
+    width: 70%;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.client-contact label{
+    font-weight: bolder;
+}
+
+.client-contact input{
+    width: 300px;
+    height: 20px;
+}
+
+.container-main{
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-main > .requirements {
+    box-sizing: border-box;
+    flex: 1 0 50%;
+}
+
+.cake-shop{
+    box-sizing: border-box;
+    flex: 0 1 50%;
+    height: 50%;
+    width: 40%;
+    max-width: 2000px;
+    border: 1px solid #ddd;
+    padding: 5px;
+    border-radius: 4px;
+    position: relative;
+    left: -9px;
+}
+
+.decoration-table{
+    box-sizing: border-box;
+    text-align: center;    
+    margin: 20px;
+}
+
+.buttons > input{
+    position: relative;
+    top: -70px;
+    left: 60%;
+    color: black;
+    background-color: #975959;
+    padding: 15px 25px 15px 25px;
+    font-size: 15px;
+    border-radius: 5px; 
+    box-shadow: 0px 8px 15px gray;
+    border: none; 
+    font-weight: bold;
+    text-align: center;
+    transition: all 0.3 ease 0s;
+    outline: none;
+    margin: 10px;
+}
+
+.buttons > input:hover{
+    cursor: pointer;
+    transform: translateY(-1px);
+}
+
+.client{
+    background-color: white;
+    margin: 0 auto;
+    text-align: center;
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+}
+
+.qty-taste > table{
+    width: 100%;
+}
+
+.initial-table{
+    font-weight: bolder;
+    background-color: rgba(109, 175, 219, 0.726);
+}
+
+.table-title2 {
+    font-weight: bolder;
+    background-color: rgba(109, 175, 219, 0.726);
+}
