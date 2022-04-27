@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        table, th, td {
+          border:1px solid black;
+        }
+        </style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido</title>
+</head>
+<body style="background-color: skyblue;">
+    <center>
+        <img src="D:\Documents\ProgramacionWeb\HTML\DTentaciones.png" alt="Logo Pasteleria Dulces Tentaciones" width="200px" >
+    </center>
+    
+    <h1 style="text-align: center;">Pasteleria <br> Dulces Tentaciones</h1>
+
+    <p style="text-align: center;">La manera mas dulce de disfrutar la vida, es endulzandola con un pastel</p>
+
+    <br>
+    <h2 style="text-align: center;">Arma tu propio Pastel !!!</h2>
+
+    <form action="Pedido.js">
+        <label for="Nombre">Danos tu Nombre Completo</label><br>
+        <input type="text" id="Nombre" name="Nombre" placeholder="Nombre">
+
+        <br><br>
+        <label for="tel">Danos tu telefono</label><br>
+        <input type="tel" id="Telefono" name="Telefono" placeholder="Telefono" maxlength="10">
+
+        <br><br>
+        <label for="Nombre">Danos tu Correo electronico</label><br>
+        <input type="text" id="Correo electronico" name="Correo electronico" placeholder="Correo electronico">
+
+        <br><br>
+        <label for="Nombre">Proporciona la descripcion de tu pastel (Evento, Tematica, etc...)</label><br>
+        <input type="text" id="Descripcion" name="Descripcion" placeholder="Descripcion">
+
+    
+        <h3>Cual Sabor/Sabores Elegiras... </h3>
+        <p>Recuerda Maximo 3</p>
+        <input type="checkbox" id="Chocolate" name="sabor" value="Chocolate">
+        <label for="Chocolate">Chocolate.........$50.00</label><br>
+        <input type="checkbox" id="Limon" name="sabor" value="Limon">
+        <label for="Limon">Limon.........$45.00</label><br>
+        <input type="checkbox" id="Vainilla" name="sabor" value="Vainilla">
+        <label for="Vainilla">Vainilla.........$45.00</label><br>
+        <input type="checkbox" id="Zanahoria" name="sabor" value="Zanahoria">
+        <label for="Zanahoria">Zanahoria.........$40.00</label><br>
+        <input type="checkbox" id="Naranja" name="sabor" value="Naranja">
+        <label for="Naranja">Naranja.........$40.00</label><br>
+        <input type="checkbox" id="Fresa" name="sabor" value="Fresa">
+        <label for="Fresa">Fresa.........$50.00</label><br>
+        <input type="checkbox" id="Guayaba" name="sabor" value="Guayaba">
+        <label for="Guayaba">Guayaba.........$50.00</label><br>
+        <input type="checkbox" id="Queso" name="sabor" value="Queso">
+        <label for="Queso">Queso.........$40.00</label><br>
+        
+        <h3>Que decoraciones llevara..</h3>
+        <p>Recuerda Maximo 2</p>
+        <input type="checkbox" id="Mangas pasteleras" name="decoraciones" value="Mangas pasteleras">
+        <label for="Mangas pasteleras">Mangas pasteleras.........$50.00</label><br>
+        <input type="checkbox" id="Topper adorno" name="decoraciones" value="Topper adorno">
+        <label for="Topper adorno">Topper adorno.........$62.00</label><br>
+        <input type="checkbox" id="Gel para ribetes" name="decoraciones" value="Gel para ribetes">
+        <label for="Gel para ribetes">Gel para ribetes.........$60.00</label><br>
+        <input type="checkbox" id="Colorantes alimentarios y aerosoles" name="decoraciones" value="Colorantes alimentarios y aerosoles">
+        <label for="Colorantes alimentarios y aerosoles">Colorantes alimentarios y aerosoles.........$55.00</label><br>
+        <input type="checkbox" id="Pastel Sprinkles y confeti" name="decoraciones" value="Pastel Sprinkles y confeti">
+        <label for="Pastel Sprinkles y confeti">Pastel Sprinkles y confeti.........$55.00</label><br>
+        <input type="checkbox" id="Azúcar/Fondant//Hoja de glaseado" name="decoraciones" value="Azúcar/Fondant//Hoja de glaseado">
+        <label for="Azúcar/Fondant//Hoja de glaseado">Azúcar/Fondant//Hoja de glaseado.........$55.00</label><br>
+
+        <h3>Que tamaño sera..</h3>
+        <select name="tamaño" id="tamaño">
+            <option value="10">10cm = 8 porciones</option>
+            <option value="15">15cm = 12 porciones</option>
+            <option value="20">20cm = 24 porciones</option>
+            <option value="25">25cm = 38 porciones</option>
+            <option value="30">30cm = 56 porciones</option>
+            <option value="35">35cm = 78 porciones</option>
+            <option value="40">40cm = 100 porciones</option>
+        </select>
+
+        <br><br>
+        <br><br>
+        <input type="reset">
+        <input type="submit">
+        <br><br><br><br>
+    </form>
+    
+    <table class="default">
+        <tr>
+            <td>Decoracion</td>
+            <td>Mangas pasteleras</td>
+            <td>Topper adorno</td>
+            <td>Gel para ribetes</td>
+            <td>Colorantes alimentarios y aerosoles</td>
+            <td>Pastel Sprinkles y confeti</td>
+            <td>Azúcar/Fondant//Hoja de glaseado</td>
+        </tr>
+        <tr>
+            <td>Fotos</td>
+            <td><img src="https://gastronomiaycia.republica.com/wp-content/uploads/2015/12/seis_decorar_boquilla-680x433.jpg" alt="Mangas Pasteleras" width="150px"></td>
+            <td><img src="https://floweraura-blog-img.s3.ap-south-1.amazonaws.com/Cupcake+Settle/cake-topper.jpg" alt="Topper Adorno" width="150px"></td>
+            <td><img src="https://m.media-amazon.com/images/I/41Rw4uHEGkL.jpg" alt="Gel para ribetes" width="150px"></td>
+            <td><img src="https://floweraura-blog-img.s3.ap-south-1.amazonaws.com/Cupcake+Settle/food-colour-and-spray.jpg" alt="Colorantes alimentarios y aerosoles" width="150px"></td>
+            <td><img src="https://floweraura-blog-img.s3.ap-south-1.amazonaws.com/Cupcake+Settle/cake-sprinklers.jpg" alt="Pastel Sprinkles y confeti" width="150px"></td>
+            <td><img src="https://www.sugarflowersworkshop.com/wp-content/uploads/elementor/thumbs/Fondant_cake-oxyk5kqtzs7o1g95zmythxhdeqd7neq5p7f7o8by50.jpg" alt="Azúcar/Fondant//Hoja de glaseado" width="150px"></td>
+        </tr>
+    </table>
+
+    <br><br><br>
+    <h4>Contacto Pasteleria</h4>
+    <p>Direccion <br> Calle de Velázquez, 80 Madrid. Address: Street de Velázquez, 80 Madrid. </p>
+    <p>Telefono <br> +52 449 810 1621 </p>
+    <p>Horarios de Atencion <br> Lunes - Viernes 09:00-21:00 <br> Sabado 09:00-14:00 <br> Domingo Cerrado</p>
+
+    <br><br>  
+    <a href="./PasteleriaPract.html">  
+        <input type="button" value="Regresar al Menu">
+    </a>
+
+</html>
